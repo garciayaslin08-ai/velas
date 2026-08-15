@@ -1,0 +1,4153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ESENCIA | Catálogo de Velas y Jabones Artesanales</title>
+
+<meta name="description"
+content="Esencia - Catálogo de velas aromáticas y jabones artesanales para momentos especiales.">
+
+
+<style>
+
+/* =========================================================
+   PALETA DE COLORES
+========================================================= */
+
+:root{
+
+    --rosa-muy-claro:#fff7f9;
+    --rosa-claro:#ffe9ef;
+    --rosa:#f7cbd7;
+    --rosa-medio:#e9aabb;
+    --rosa-oscuro:#bd7188;
+
+    --crema:#fffaf5;
+
+    --cafe:#72565d;
+    --cafe-oscuro:#49383d;
+
+    --dorado:#b99561;
+
+    --blanco:#ffffff;
+
+    --gris:#87757a;
+
+    --sombra:rgba(115,65,80,.12);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    background:var(--rosa-muy-claro);
+
+    color:var(--cafe);
+
+    font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+    line-height:1.6;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:rgba(255,247,249,.96);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid #f2dce2;
+
+}
+
+
+.navbar{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:17px 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+.logo{
+
+    font-size:34px;
+
+    letter-spacing:5px;
+
+    color:var(--rosa-oscuro);
+
+    font-weight:bold;
+
+}
+
+
+.logo span{
+
+    color:var(--dorado);
+
+}
+
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:28px;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:var(--cafe);
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:var(--rosa-oscuro);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    min-height:88vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:
+
+    linear-gradient(
+        rgba(255,235,241,.82),
+        rgba(255,247,249,.90)
+    ),
+
+    url("https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+}
+
+
+.hero-contenido{
+
+    max-width:900px;
+
+}
+
+
+.hero-pequeno{
+
+    color:var(--dorado);
+
+    font-family:Arial,sans-serif;
+
+    text-transform:uppercase;
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+}
+
+
+.hero h1{
+
+    font-size:clamp(65px,10vw,120px);
+
+    color:var(--rosa-oscuro);
+
+    font-weight:normal;
+
+    letter-spacing:8px;
+
+    margin:10px 0;
+
+}
+
+
+.hero h2{
+
+    color:var(--cafe);
+
+    font-size:clamp(25px,4vw,44px);
+
+    font-weight:normal;
+
+}
+
+
+.hero p{
+
+    max-width:700px;
+
+    margin:25px auto;
+
+    font-size:20px;
+
+}
+
+
+.boton{
+
+    display:inline-block;
+
+    padding:16px 35px;
+
+    background:var(--rosa-oscuro);
+
+    color:white;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-family:Arial,sans-serif;
+
+    transition:.3s;
+
+}
+
+
+.boton:hover{
+
+    background:#a75e76;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+section{
+
+    padding:100px 25px;
+
+}
+
+
+.titulo{
+
+    max-width:850px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+
+.titulo small{
+
+    color:var(--dorado);
+
+    font-family:Arial,sans-serif;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+}
+
+
+.titulo h2{
+
+    color:var(--rosa-oscuro);
+
+    font-size:clamp(40px,5vw,60px);
+
+    font-weight:normal;
+
+    margin:10px 0 15px;
+
+}
+
+
+.titulo p{
+
+    font-size:18px;
+
+    color:var(--gris);
+
+}
+
+
+/* =========================================================
+   NOSOTROS
+========================================================= */
+
+.nosotros{
+
+    background:white;
+
+}
+
+
+.nosotros-contenedor{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+.nosotros-foto{
+
+    height:520px;
+
+    border-radius:220px 220px 25px 25px;
+
+    background:
+
+    url("https://images.unsplash.com/photo-1605651202774-7d573fd3f12e?auto=format&fit=crop&w=1000&q=85")
+    center/cover;
+
+}
+
+
+.nosotros-texto h3{
+
+    font-size:42px;
+
+    color:var(--rosa-oscuro);
+
+    font-weight:normal;
+
+    margin-bottom:20px;
+
+}
+
+
+.nosotros-texto p{
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* =========================================================
+   CATÁLOGO
+========================================================= */
+
+.catalogo{
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+
+/* =========================================================
+   FILTROS
+========================================================= */
+
+.filtros{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:55px;
+
+}
+
+
+.filtro{
+
+    border:none;
+
+    background:white;
+
+    color:var(--cafe);
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    font-family:Georgia,serif;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 3px 12px var(--sombra);
+
+    transition:.3s;
+
+}
+
+
+.filtro:hover{
+
+    background:var(--rosa-claro);
+
+}
+
+
+.filtro.activo{
+
+    background:var(--rosa-oscuro);
+
+    color:white;
+
+}
+
+
+/* =========================================================
+   CATEGORÍAS
+========================================================= */
+
+.categoria{
+
+    margin-bottom:80px;
+
+}
+
+
+.categoria-titulo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+.categoria-titulo h3{
+
+    font-size:40px;
+
+    color:var(--rosa-oscuro);
+
+    font-weight:normal;
+
+}
+
+
+.linea{
+
+    flex:1;
+
+    height:1px;
+
+    background:var(--rosa);
+
+}
+
+
+/* =========================================================
+   GRID PRODUCTOS
+========================================================= */
+
+.productos{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+/* =========================================================
+   TARJETA
+========================================================= */
+
+.producto{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 30px var(--sombra);
+
+    transition:.35s;
+
+}
+
+
+.producto:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+    0 15px 40px rgba(120,70,85,.18);
+
+}
+
+
+/* =========================================================
+   FOTO
+========================================================= */
+
+.producto-foto{
+
+    height:350px;
+
+    background:var(--rosa-claro);
+
+    position:relative;
+
+    cursor:pointer;
+
+    overflow:hidden;
+
+}
+
+
+.producto-foto img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+
+.producto:hover
+.producto-foto img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* Espacio para colocar fotografías */
+
+.foto-placeholder{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #f9d4de,
+        #fff6f8
+    );
+
+    color:var(--rosa-oscuro);
+
+    font-size:20px;
+
+}
+
+
+/* =========================================================
+   INFORMACIÓN
+========================================================= */
+
+.producto-info{
+
+    padding:25px;
+
+}
+
+
+.producto-info h4{
+
+    color:var(--cafe-oscuro);
+
+    font-size:27px;
+
+    font-weight:normal;
+
+    margin-bottom:10px;
+
+}
+
+
+.codigo{
+
+    color:var(--dorado);
+
+    font-family:Arial,sans-serif;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+    margin-bottom:12px;
+
+}
+
+
+.descripcion{
+
+    font-family:Arial,sans-serif;
+
+    color:var(--gris);
+
+    font-size:14px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* =========================================================
+   DATOS
+========================================================= */
+
+.datos{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:8px;
+
+}
+
+
+.dato{
+
+    background:var(--rosa-muy-claro);
+
+    border-radius:8px;
+
+    padding:9px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:13px;
+
+}
+
+
+.dato strong{
+
+    display:block;
+
+    color:var(--rosa-oscuro);
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+
+/* =========================================================
+   PRECIO
+========================================================= */
+
+.precio{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    padding-top:15px;
+
+    border-top:1px solid #f0dce1;
+
+}
+
+
+.precio span{
+
+    font-family:Arial,sans-serif;
+
+    font-size:13px;
+
+    color:var(--gris);
+
+}
+
+
+.precio strong{
+
+    font-family:Arial,sans-serif;
+
+    color:var(--rosa-oscuro);
+
+    font-size:26px;
+
+}
+
+
+/* =========================================================
+   FRASE
+========================================================= */
+
+.frase{
+
+    background:
+
+    linear-gradient(
+        rgba(189,113,136,.70),
+        rgba(189,113,136,.70)
+    ),
+
+    url("https://images.unsplash.com/photo-1603905179139-db12ab535d8f?auto=format&fit=crop&w=1600&q=85")
+    center/cover;
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+}
+
+
+.frase h2{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:clamp(35px,5vw,58px);
+
+    font-weight:normal;
+
+}
+
+
+.frase p{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+}
+
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+.contacto{
+
+    background:white;
+
+}
+
+
+.contacto-contenedor{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+
+.contacto-contenedor h3{
+
+    font-size:42px;
+
+    color:var(--rosa-oscuro);
+
+    font-weight:normal;
+
+}
+
+
+.contacto-contenedor p{
+
+    font-size:18px;
+
+    margin:15px auto 30px;
+
+}
+
+
+.contacto-datos{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+
+.contacto-item{
+
+    min-width:220px;
+
+    background:var(--rosa-muy-claro);
+
+    padding:20px 30px;
+
+    border-radius:15px;
+
+}
+
+
+.contacto-item strong{
+
+    display:block;
+
+    color:var(--rosa-oscuro);
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    background:#563f45;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+
+footer .logo{
+
+    color:white;
+
+}
+
+
+footer p{
+
+    color:#eadce0;
+
+}
+
+
+/* =========================================================
+   MODAL FOTOGRAFÍA
+========================================================= */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(45,30,35,.90);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:5000;
+
+    padding:30px;
+
+}
+
+
+.modal.abierto{
+
+    display:flex;
+
+}
+
+
+.modal img{
+
+    max-width:90%;
+
+    max-height:88vh;
+
+    border-radius:15px;
+
+    object-fit:contain;
+
+}
+
+
+.cerrar{
+
+    position:absolute;
+
+    top:15px;
+
+    right:30px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+    .productos{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .nosotros-contenedor{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    section{
+
+        padding:70px 15px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:60px;
+
+    }
+
+
+    .productos{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .producto-foto{
+
+        height:390px;
+
+    }
+
+
+    .categoria-titulo{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+
+    .linea{
+
+        width:100%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+
+ESENCIA<span>•</span>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="#inicio">Inicio</a>
+</li>
+
+<li>
+<a href="#nosotros">Nosotros</a>
+</li>
+
+<li>
+<a href="#jabones">Jabones</a>
+</li>
+
+<li>
+<a href="#velas">Velas</a>
+</li>
+
+<li>
+<a href="#contacto">Contacto</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section
+class="hero"
+id="inicio"
+>
+
+<div class="hero-contenido">
+
+
+<div class="hero-pequeno">
+
+VELAS AROMÁTICAS · JABONES ARTESANALES
+
+</div>
+
+
+<h1>
+
+Esencia
+
+</h1>
+
+
+<h2>
+
+Detalles que cuentan historias
+
+</h2>
+
+
+<p>
+
+Descubre nuestra colección de velas y
+jabones artesanales para cada ocasión.
+
+</p>
+
+
+<a
+href="#velas"
+class="boton"
+>
+
+Explorar catálogo
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     NOSOTROS
+========================================================= -->
+
+<section
+class="nosotros"
+id="nosotros"
+>
+
+<div class="titulo">
+
+<small>
+Nuestra esencia
+</small>
+
+<h2>
+Conoce Esencia
+</h2>
+
+<p>
+Un espacio creado para mostrar nuestros
+diseños artesanales.
+</p>
+
+</div>
+
+
+<div class="nosotros-contenedor">
+
+
+<div class="nosotros-foto"></div>
+
+
+<div class="nosotros-texto">
+
+<h3>
+Hecho con cariño
+</h3>
+
+
+<p>
+
+En Esencia creamos velas aromáticas y
+jabones artesanales pensados para
+acompañar los momentos más importantes.
+
+</p>
+
+
+<p>
+
+Nuestro catálogo reúne diferentes diseños,
+colores, aromas, tamaños y presentaciones.
+
+</p>
+
+
+<p>
+
+Explora cada colección y descubre
+el diseño que más te guste.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     JABONES
+========================================================= -->
+
+<section
+class="jabones"
+id="jabones"
+>
+
+<div class="titulo">
+
+<small>
+Colección artesanal
+</small>
+
+<h2>
+Jabones
+</h2>
+
+<p>
+Nuestros diseños de jabones artesanales.
+</p>
+
+</div>
+
+
+<div class="catalogo">
+
+
+<div class="categoria">
+
+<div class="categoria-titulo">
+
+<h3>
+Jabones Artesanales
+</h3>
+
+<div class="linea"></div>
+
+</div>
+
+
+<div class="productos">
+
+
+<!-- JABON 01 -->
+
+<article class="producto">
+
+<div
+class="producto-foto"
+onclick="abrirImagen(this)"
+>
+
+<div class="foto-placeholder">
+
+FOTO<br>
+JABÓN 01
+
+</div>
+
+</div>
+
+
+<div class="producto-info">
+
+<div class="codigo">
+ES-J01
+</div>
+
+<h4>
+Jabón Floral
+</h4>
+
+<p class="descripcion">
+Diseño floral artesanal.
+</p>
+
+
+<div class="datos">
+
+<div class="dato">
+<strong>Tamaño</strong>
+6 x 6 cm
+</div>
+
+<div class="dato">
+<strong>Peso</strong>
+80 g
+</div>
+
+<div class="dato">
+<strong>Aroma</strong>
+Lavanda
+</div>
+
+<div class="dato">
+<strong>Color</strong>
+Rosa
+</div>
+
+</div>
+
+
+<div class="precio">
+
+<span>Precio</span>
+
+<strong>$45</strong>
+
+</div>
+
+</div>
+
+</article>
+
+
+<!-- JABON 02 -->
+
+<article class="producto">
+
+<div class="producto-foto">
+
+<div class="foto-placeholder">
+FOTO<br>
+JABÓN 02
+</div>
+
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-J02</div>
+
+<h4>Jabón Corazón</h4>
+
+<p class="descripcion">
+Presentación romántica.
+</p>
+
+<div class="datos">
+
+<div class="dato">
+<strong>Tamaño</strong>
+7 x 7 cm
+</div>
+
+<div class="dato">
+<strong>Peso</strong>
+90 g
+</div>
+
+<div class="dato">
+<strong>Aroma</strong>
+Vainilla
+</div>
+
+<div class="dato">
+<strong>Color</strong>
+Rosa
+</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$55</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- JABON 03 -->
+
+<article class="producto">
+
+<div class="producto-foto">
+
+<div class="foto-placeholder">
+FOTO<br>
+JABÓN 03
+</div>
+
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-J03</div>
+
+<h4>Jabón Especial</h4>
+
+<p class="descripcion">
+Diseño para recuerdos.
+</p>
+
+<div class="datos">
+
+<div class="dato">
+<strong>Tamaño</strong>
+8 x 5 cm
+</div>
+
+<div class="dato">
+<strong>Peso</strong>
+100 g
+</div>
+
+<div class="dato">
+<strong>Aroma</strong>
+Coco
+</div>
+
+<div class="dato">
+<strong>Color</strong>
+Blanco
+</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$60</strong>
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     VELAS
+========================================================= -->
+
+<section
+id="velas"
+>
+
+<div class="titulo">
+
+<small>
+Catálogo de diseños
+</small>
+
+<h2>
+Velas
+</h2>
+
+<p>
+Selecciona una categoría para encontrar
+rápidamente el diseño que buscas.
+</p>
+
+</div>
+
+
+<div class="catalogo">
+
+
+<!-- =====================================================
+     FILTROS
+===================================================== -->
+
+<div class="filtros">
+
+
+<button class="filtro activo"
+onclick="filtrar('todos',this)">
+Todas
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('bautizo',this)">
+Bautizo
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('boda',this)">
+Boda
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('flores',this)">
+Flores
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('comunion',this)">
+Primera Comunión
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('confirmacion',this)">
+Confirmación
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('religiosas',this)">
+Religiosas
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('baby',this)">
+Baby Shower
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('vaso',this)">
+Velas de Vaso
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('ocasion',this)">
+Toda Ocasión
+</button>
+
+
+<button class="filtro"
+onclick="filtrar('personalizadas',this)">
+Personalizadas
+</button>
+
+
+</div>
+
+
+<!-- =====================================================
+     BAUTIZO - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo bautizo">
+
+<div class="categoria-titulo">
+
+<h3>
+Bautizo
+</h3>
+
+<div class="linea"></div>
+
+</div>
+
+
+<div class="productos">
+
+
+<!-- B01 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 01</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B01</div>
+
+<h4>Ángel Clásico</h4>
+
+<p class="descripcion">Vela delicada para bautizo.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+
+<div class="dato"><strong>Aroma</strong>Suave</div>
+
+<div class="dato"><strong>Color</strong>Blanco</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$120</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B02 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 02</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B02</div>
+
+<h4>Cruz Delicada</h4>
+
+<p class="descripcion">Diseño religioso elegante.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+
+<div class="dato"><strong>Color</strong>Blanco</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$125</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B03 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 03</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B03</div>
+
+<h4>Paloma</h4>
+
+<p class="descripcion">Diseño inspirado en la paz.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>14 cm</div>
+
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+
+<div class="dato"><strong>Aroma</strong>Talco</div>
+
+<div class="dato"><strong>Color</strong>Blanco</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$125</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B04 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 04</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B04</div>
+
+<h4>Estrella</h4>
+
+<p class="descripcion">Diseño infantil delicado.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>130 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$120</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B05 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 05</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B05</div>
+
+<h4>Angelito</h4>
+
+<p class="descripcion">Presentación infantil.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>13 cm</div>
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$130</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B06 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 06</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B06</div>
+
+<h4>Rosario</h4>
+
+<p class="descripcion">Diseño religioso.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$135</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B07 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 07</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B07</div>
+
+<h4>Flor Blanca</h4>
+
+<p class="descripcion">Diseño floral elegante.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>130 g</div>
+<div class="dato"><strong>Aroma</strong>Flores</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$125</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B08 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 08</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B08</div>
+
+<h4>Mi Bautizo</h4>
+
+<p class="descripcion">Diseño conmemorativo.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+<div class="dato"><strong>Aroma</strong>Talco</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$140</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B09 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 09</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B09</div>
+
+<h4>Pequeño Ángel</h4>
+
+<p class="descripcion">Diseño dulce y delicado.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>120 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$120</strong>
+</div>
+
+</div>
+
+</article>
+
+
+<!-- B10 -->
+
+<article class="producto producto-categoria bautizo">
+
+<div class="producto-foto">
+<div class="foto-placeholder">FOTO BAUTIZO 10</div>
+</div>
+
+<div class="producto-info">
+
+<div class="codigo">ES-B10</div>
+
+<h4>Bautizo Floral</h4>
+
+<p class="descripcion">Diseño floral personalizado.</p>
+
+<div class="datos">
+
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+
+</div>
+
+<div class="precio">
+<span>Precio</span>
+<strong>$145</strong>
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     BODA - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo boda">
+
+<div class="categoria-titulo">
+
+<h3>Boda</h3>
+
+<div class="linea"></div>
+
+</div>
+
+
+<div class="productos">
+
+
+<!-- BODA 01 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO01</div>
+<h4>Amor Eterno</h4>
+<p class="descripcion">Diseño romántico.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>350 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$180</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 02 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO02</div>
+<h4>Novios</h4>
+<p class="descripcion">Diseño para recuerdos.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>300 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$175</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 03 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO03</div>
+<h4>Flores de Boda</h4>
+<p class="descripcion">Diseño floral elegante.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>9 cm</div>
+<div class="dato"><strong>Capacidad</strong>280 g</div>
+<div class="dato"><strong>Aroma</strong>Flores</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$170</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 04 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO04</div>
+<h4>Elegancia</h4>
+<p class="descripcion">Presentación sofisticada.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>320 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$190</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 05 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO05</div>
+<h4>Rosas</h4>
+<p class="descripcion">Diseño con rosas.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>9 cm</div>
+<div class="dato"><strong>Capacidad</strong>280 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$175</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 06 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO06</div>
+<h4>Perla</h4>
+<p class="descripcion">Diseño inspirado en perlas.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Jazmín</div>
+<div class="dato"><strong>Color</strong>Perla</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$165</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 07 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO07</div>
+<h4>Corazones</h4>
+<p class="descripcion">Diseño romántico.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$160</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 08 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO08</div>
+<h4>Iniciales</h4>
+<p class="descripcion">Diseño con iniciales.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>300 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$190</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 09 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO09</div>
+<h4>Recuerdo</h4>
+<p class="descripcion">Detalle para invitados.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>180 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$145</strong></div>
+</div>
+</article>
+
+
+<!-- BODA 10 -->
+
+<article class="producto producto-categoria boda">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BODA 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BO10</div>
+<h4>Romance</h4>
+<p class="descripcion">Diseño especial de boda.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>300 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$185</strong></div>
+</div>
+</article>
+
+
+</div>
+</div>
+
+
+<!-- =====================================================
+     FLORES - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo flores">
+
+<div class="categoria-titulo">
+<h3>Flores</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+<!-- F01 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F01</div>
+<h4>Rosa</h4>
+<p class="descripcion">Vela con forma floral.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+<!-- F02 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F02</div>
+<h4>Peonía</h4>
+<p class="descripcion">Diseño floral elegante.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Floral</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$155</strong></div>
+</div>
+</article>
+
+<!-- F03 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F03</div>
+<h4>Flor Blanca</h4>
+<p class="descripcion">Diseño blanco delicado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>220 g</div>
+<div class="dato"><strong>Aroma</strong>Jazmín</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$145</strong></div>
+</div>
+</article>
+
+<!-- F04 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F04</div>
+<h4>Lavanda</h4>
+<p class="descripcion">Inspiración natural.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>240 g</div>
+<div class="dato"><strong>Aroma</strong>Lavanda</div>
+<div class="dato"><strong>Color</strong>Lila</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+<!-- F05 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F05</div>
+<h4>Girasol</h4>
+<p class="descripcion">Diseño alegre.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>9 cm</div>
+<div class="dato"><strong>Capacidad</strong>280 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Amarillo</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$160</strong></div>
+</div>
+</article>
+
+<!-- F06 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F06</div>
+<h4>Tulipán</h4>
+<p class="descripcion">Diseño floral.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>230 g</div>
+<div class="dato"><strong>Aroma</strong>Floral</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+<!-- F07 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F07</div>
+<h4>Magnolia</h4>
+<p class="descripcion">Diseño sofisticado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>9 cm</div>
+<div class="dato"><strong>Capacidad</strong>280 g</div>
+<div class="dato"><strong>Aroma</strong>Jazmín</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$165</strong></div>
+</div>
+</article>
+
+<!-- F08 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F08</div>
+<h4>Flor Silvestre</h4>
+<p class="descripcion">Estilo natural.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>220 g</div>
+<div class="dato"><strong>Aroma</strong>Flores</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$145</strong></div>
+</div>
+</article>
+
+<!-- F09 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F09</div>
+<h4>Ramo Floral</h4>
+<p class="descripcion">Composición floral.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>300 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Multicolor</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$175</strong></div>
+</div>
+</article>
+
+<!-- F10 -->
+
+<article class="producto producto-categoria flores">
+<div class="producto-foto"><div class="foto-placeholder">FOTO FLORES 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-F10</div>
+<h4>Jardín</h4>
+<p class="descripcion">Diseño inspirado en jardín.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>300 g</div>
+<div class="dato"><strong>Aroma</strong>Floral</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$175</strong></div>
+</div>
+</article>
+
+</div>
+</div>
+
+
+<!-- =====================================================
+     PRIMERA COMUNIÓN - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo comunion">
+
+<div class="categoria-titulo">
+<h3>Primera Comunión</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+
+<!-- C01 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C01</div>
+<h4>Cruz Clásica</h4>
+<p class="descripcion">Diseño tradicional.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$130</strong></div>
+</div>
+</article>
+
+
+<!-- C02 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C02</div>
+<h4>Rosario</h4>
+<p class="descripcion">Diseño religioso.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- C03 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C03</div>
+<h4>Paloma</h4>
+<p class="descripcion">Símbolo de paz.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>14 cm</div>
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$130</strong></div>
+</div>
+</article>
+
+
+<!-- C04 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C04</div>
+<h4>Cáliz</h4>
+<p class="descripcion">Diseño religioso.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- C05 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C05</div>
+<h4>Ángel</h4>
+<p class="descripcion">Diseño delicado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>13 cm</div>
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+<div class="dato"><strong>Aroma</strong>Talco</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- C06 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C06</div>
+<h4>Hostia</h4>
+<p class="descripcion">Diseño conmemorativo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>130 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$130</strong></div>
+</div>
+</article>
+
+
+<!-- C07 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C07</div>
+<h4>Mi Comunión</h4>
+<p class="descripcion">Diseño personalizado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$145</strong></div>
+</div>
+</article>
+
+
+<!-- C08 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C08</div>
+<h4>Flor Religiosa</h4>
+<p class="descripcion">Diseño floral.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>130 g</div>
+<div class="dato"><strong>Aroma</strong>Flores</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- C09 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C09</div>
+<h4>Cruz Floral</h4>
+<p class="descripcion">Cruz decorada con flores.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>14 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- C10 -->
+
+<article class="producto producto-categoria comunion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO COMUNIÓN 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-C10</div>
+<h4>Recuerdo Especial</h4>
+<p class="descripcion">Diseño para invitados.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>120 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$125</strong></div>
+</div>
+</article>
+
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     CONFIRMACIÓN - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo confirmacion">
+
+<div class="categoria-titulo">
+<h3>Confirmación</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+
+<!-- X01 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF01</div>
+<h4>Espíritu Santo</h4>
+<p class="descripcion">Diseño religioso.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- X02 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF02</div>
+<h4>Paloma</h4>
+<p class="descripcion">Símbolo del Espíritu Santo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>14 cm</div>
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+<div class="dato"><strong>Aroma</strong>Jazmín</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- X03 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF03</div>
+<h4>Cruz</h4>
+<p class="descripcion">Diseño clásico.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- X04 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF04</div>
+<h4>Fuego</h4>
+<p class="descripcion">Diseño simbólico.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>13 cm</div>
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- X05 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF05</div>
+<h4>Paloma Floral</h4>
+<p class="descripcion">Diseño floral.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>130 g</div>
+<div class="dato"><strong>Aroma</strong>Flores</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$145</strong></div>
+</div>
+</article>
+
+
+<!-- X06 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF06</div>
+<h4>Camino de Fe</h4>
+<p class="descripcion">Diseño conmemorativo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- X07 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF07</div>
+<h4>Recuerdo</h4>
+<p class="descripcion">Detalle para invitados.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>120 g</div>
+<div class="dato"><strong>Aroma</strong>Talco</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$125</strong></div>
+</div>
+</article>
+
+
+<!-- X08 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF08</div>
+<h4>Fe</h4>
+<p class="descripcion">Diseño sencillo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>130 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$130</strong></div>
+</div>
+</article>
+
+
+<!-- X09 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF09</div>
+<h4>Esperanza</h4>
+<p class="descripcion">Diseño delicado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>11 cm</div>
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+<div class="dato"><strong>Aroma</strong>Jazmín</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- X10 -->
+
+<article class="producto producto-categoria confirmacion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO CONFIRMACIÓN 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-CF10</div>
+<h4>Luz</h4>
+<p class="descripcion">Diseño luminoso y elegante.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+</div>
+</div>
+
+
+<!-- =====================================================
+     RELIGIOSAS - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo religiosas">
+
+<div class="categoria-titulo">
+<h3>Religiosas</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+
+<!-- R01 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R01</div>
+<h4>Cruz</h4>
+<p class="descripcion">Diseño religioso clásico.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- R02 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R02</div>
+<h4>Virgen</h4>
+<p class="descripcion">Diseño religioso.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>14 cm</div>
+<div class="dato"><strong>Capacidad</strong>170 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- R03 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R03</div>
+<h4>Ángel</h4>
+<p class="descripcion">Diseño delicado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>13 cm</div>
+<div class="dato"><strong>Capacidad</strong>150 g</div>
+<div class="dato"><strong>Aroma</strong>Talco</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- R04 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R04</div>
+<h4>Rosario</h4>
+<p class="descripcion">Diseño conmemorativo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$145</strong></div>
+</div>
+</article>
+
+
+<!-- R05 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R05</div>
+<h4>Paloma</h4>
+<p class="descripcion">Símbolo de paz.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+<div class="dato"><strong>Aroma</strong>Jazmín</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- R06 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R06</div>
+<h4>Sagrada Familia</h4>
+<p class="descripcion">Diseño familiar.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>180 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$165</strong></div>
+</div>
+</article>
+
+
+<!-- R07 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R07</div>
+<h4>Corazón de Fe</h4>
+<p class="descripcion">Diseño especial.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>130 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- R08 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R08</div>
+<h4>Cruz Floral</h4>
+<p class="descripcion">Cruz decorada.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>14 cm</div>
+<div class="dato"><strong>Capacidad</strong>160 g</div>
+<div class="dato"><strong>Aroma</strong>Flores</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- R09 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R09</div>
+<h4>Oración</h4>
+<p class="descripcion">Diseño conmemorativo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>12 cm</div>
+<div class="dato"><strong>Capacidad</strong>140 g</div>
+<div class="dato"><strong>Aroma</strong>Lavanda</div>
+<div class="dato"><strong>Color</strong>Blanco</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- R10 -->
+
+<article class="producto producto-categoria religiosas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO RELIGIOSA 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-R10</div>
+<h4>Luz de Fe</h4>
+<p class="descripcion">Diseño elegante.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>15 cm</div>
+<div class="dato"><strong>Capacidad</strong>170 g</div>
+<div class="dato"><strong>Aroma</strong>Suave</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+</div>
+</div>
+
+
+<!-- =====================================================
+     BABY SHOWER - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo baby">
+
+<div class="categoria-titulo">
+<h3>Baby Shower</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+
+<!-- S01 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS01</div>
+<h4>Osito</h4>
+<p class="descripcion">Diseño infantil.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>220 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- S02 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS02</div>
+<h4>Elefantito</h4>
+<p class="descripcion">Diseño tierno.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>230 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Azul</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$145</strong></div>
+</div>
+</article>
+
+
+<!-- S03 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS03</div>
+<h4>Carriola</h4>
+<p class="descripcion">Diseño para bienvenida.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>210 g</div>
+<div class="dato"><strong>Aroma</strong>Talco</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- S04 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS04</div>
+<h4>Chupón</h4>
+<p class="descripcion">Detalle infantil.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>6 cm</div>
+<div class="dato"><strong>Capacidad</strong>180 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$130</strong></div>
+</div>
+</article>
+
+
+<!-- S05 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS05</div>
+<h4>Baby</h4>
+<p class="descripcion">Diseño sencillo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>200 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- S06 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS06</div>
+<h4>Patito</h4>
+<p class="descripcion">Diseño divertido.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>200 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Amarillo</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- S07 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS07</div>
+<h4>Estrellita</h4>
+<p class="descripcion">Diseño dulce.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>190 g</div>
+<div class="dato"><strong>Aroma</strong>Talco</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$130</strong></div>
+</div>
+</article>
+
+
+<!-- S08 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS08</div>
+<h4>Nube</h4>
+<p class="descripcion">Diseño suave.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>210 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Azul</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- S09 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS09</div>
+<h4>Luna</h4>
+<p class="descripcion">Diseño infantil.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>210 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- S10 -->
+
+<article class="producto producto-categoria baby">
+<div class="producto-foto"><div class="foto-placeholder">FOTO BABY 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-BS10</div>
+<h4>Bienvenido Bebé</h4>
+<p class="descripcion">Diseño conmemorativo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>9 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Bebé</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+</div>
+</div>
+
+
+<!-- =====================================================
+     VELAS DE VASO - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo vaso">
+
+<div class="categoria-titulo">
+<h3>Velas de Vaso</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+
+<!-- V01 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V01</div>
+<h4>Vaso Mini</h4>
+<p class="descripcion">Vela aromática pequeña.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>120 ml</div>
+<div class="dato"><strong>Altura</strong>5 cm</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Duración</strong>20 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$100</strong></div>
+</div>
+</article>
+
+
+<!-- V02 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V02</div>
+<h4>Vaso Rosa</h4>
+<p class="descripcion">Presentación delicada.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>150 ml</div>
+<div class="dato"><strong>Altura</strong>6 cm</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Duración</strong>25 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$120</strong></div>
+</div>
+</article>
+
+
+<!-- V03 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V03</div>
+<h4>Vaso Mediano</h4>
+<p class="descripcion">Para espacios especiales.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>250 ml</div>
+<div class="dato"><strong>Altura</strong>7 cm</div>
+<div class="dato"><strong>Aroma</strong>Lavanda</div>
+<div class="dato"><strong>Duración</strong>35 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$160</strong></div>
+</div>
+</article>
+
+
+<!-- V04 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V04</div>
+<h4>Vaso Floral</h4>
+<p class="descripcion">Diseño floral.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>250 ml</div>
+<div class="dato"><strong>Altura</strong>7 cm</div>
+<div class="dato"><strong>Aroma</strong>Flores</div>
+<div class="dato"><strong>Duración</strong>35 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$165</strong></div>
+</div>
+</article>
+
+
+<!-- V05 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V05</div>
+<h4>Vaso Grande</h4>
+<p class="descripcion">Mayor duración.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>450 ml</div>
+<div class="dato"><strong>Altura</strong>9 cm</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Duración</strong>55 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$220</strong></div>
+</div>
+</article>
+
+
+<!-- V06 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V06</div>
+<h4>Vaso Relax</h4>
+<p class="descripcion">Ideal para aromatizar.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>300 ml</div>
+<div class="dato"><strong>Altura</strong>8 cm</div>
+<div class="dato"><strong>Aroma</strong>Lavanda</div>
+<div class="dato"><strong>Duración</strong>40 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$180</strong></div>
+</div>
+</article>
+
+
+<!-- V07 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V07</div>
+<h4>Vaso Dulce</h4>
+<p class="descripcion">Aroma dulce.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>250 ml</div>
+<div class="dato"><strong>Altura</strong>7 cm</div>
+<div class="dato"><strong>Aroma</strong>Caramelo</div>
+<div class="dato"><strong>Duración</strong>35 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$165</strong></div>
+</div>
+</article>
+
+
+<!-- V08 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V08</div>
+<h4>Vaso Spa</h4>
+<p class="descripcion">Aroma relajante.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>300 ml</div>
+<div class="dato"><strong>Altura</strong>8 cm</div>
+<div class="dato"><strong>Aroma</strong>Eucalipto</div>
+<div class="dato"><strong>Duración</strong>40 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$180</strong></div>
+</div>
+</article>
+
+
+<!-- V09 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V09</div>
+<h4>Vaso Premium</h4>
+<p class="descripcion">Presentación elegante.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>400 ml</div>
+<div class="dato"><strong>Altura</strong>9 cm</div>
+<div class="dato"><strong>Aroma</strong>Jazmín</div>
+<div class="dato"><strong>Duración</strong>50 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$210</strong></div>
+</div>
+</article>
+
+
+<!-- V10 -->
+
+<article class="producto producto-categoria vaso">
+<div class="producto-foto"><div class="foto-placeholder">FOTO VASO 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-V10</div>
+<h4>Vaso Especial</h4>
+<p class="descripcion">Edición especial Esencia.</p>
+<div class="datos">
+<div class="dato"><strong>Capacidad</strong>450 ml</div>
+<div class="dato"><strong>Altura</strong>9 cm</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Duración</strong>55 h</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$220</strong></div>
+</div>
+</article>
+
+
+</div>
+</div>
+
+
+<!-- =====================================================
+     TODA OCASIÓN - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo ocasion">
+
+<div class="categoria-titulo">
+<h3>Toda Ocasión</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+
+<!-- O01 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O01</div>
+<h4>Gracias</h4>
+<p class="descripcion">Detalle de agradecimiento.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- O02 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O02</div>
+<h4>Felicidades</h4>
+<p class="descripcion">Para celebraciones.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- O03 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O03</div>
+<h4>Amor</h4>
+<p class="descripcion">Detalle romántico.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Fresas</div>
+<div class="dato"><strong>Color</strong>Rojo</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$155</strong></div>
+</div>
+</article>
+
+
+<!-- O04 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O04</div>
+<h4>Feliz Cumpleaños</h4>
+<p class="descripcion">Detalle para cumpleaños.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- O05 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O05</div>
+<h4>Feliz Aniversario</h4>
+<p class="descripcion">Detalle romántico.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>9 cm</div>
+<div class="dato"><strong>Capacidad</strong>280 g</div>
+<div class="dato"><strong>Aroma</strong>Rosas</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$165</strong></div>
+</div>
+</article>
+
+
+<!-- O06 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O06</div>
+<h4>Amistad</h4>
+<p class="descripcion">Para alguien especial.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Lavanda</div>
+<div class="dato"><strong>Color</strong>Lila</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- O07 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O07</div>
+<h4>Gracias por Venir</h4>
+<p class="descripcion">Recuerdo para invitados.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>180 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Crema</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$135</strong></div>
+</div>
+</article>
+
+
+<!-- O08 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O08</div>
+<h4>Un Detalle Para Ti</h4>
+<p class="descripcion">Regalo especial.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>8 cm</div>
+<div class="dato"><strong>Capacidad</strong>250 g</div>
+<div class="dato"><strong>Aroma</strong>Coco</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- O09 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O09</div>
+<h4>Con Cariño</h4>
+<p class="descripcion">Detalle artesanal.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>7 cm</div>
+<div class="dato"><strong>Capacidad</strong>200 g</div>
+<div class="dato"><strong>Aroma</strong>Vainilla</div>
+<div class="dato"><strong>Color</strong>Rosa</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- O10 -->
+
+<article class="producto producto-categoria ocasion">
+<div class="producto-foto"><div class="foto-placeholder">FOTO OCASIÓN 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-O10</div>
+<h4>Esencia Especial</h4>
+<p class="descripcion">Diseño exclusivo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>10 cm</div>
+<div class="dato"><strong>Capacidad</strong>300 g</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Precio</span><strong>$180</strong></div>
+</div>
+</article>
+
+
+</div>
+</div>
+
+
+<!-- =====================================================
+     PERSONALIZADAS - 10
+===================================================== -->
+
+<div class="categoria filtro-grupo personalizadas">
+
+<div class="categoria-titulo">
+<h3>Personalizadas</h3>
+<div class="linea"></div>
+</div>
+
+
+<div class="productos">
+
+
+<!-- P01 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 01</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P01</div>
+<h4>Nombre</h4>
+<p class="descripcion">Vela con nombre personalizado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$150</strong></div>
+</div>
+</article>
+
+
+<!-- P02 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 02</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P02</div>
+<h4>Nombre y Fecha</h4>
+<p class="descripcion">Diseño conmemorativo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$160</strong></div>
+</div>
+</article>
+
+
+<!-- P03 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 03</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P03</div>
+<h4>Iniciales</h4>
+<p class="descripcion">Diseño con iniciales.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$160</strong></div>
+</div>
+</article>
+
+
+<!-- P04 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 04</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P04</div>
+<h4>Frase</h4>
+<p class="descripcion">Vela con mensaje.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$160</strong></div>
+</div>
+</article>
+
+
+<!-- P05 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 05</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P05</div>
+<h4>Logo</h4>
+<p class="descripcion">Diseño con logotipo.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$180</strong></div>
+</div>
+</article>
+
+
+<!-- P06 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 06</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P06</div>
+<h4>Evento</h4>
+<p class="descripcion">Diseño para celebración.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$170</strong></div>
+</div>
+</article>
+
+
+<!-- P07 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 07</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P07</div>
+<h4>Recuerdo</h4>
+<p class="descripcion">Detalle para invitados.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$140</strong></div>
+</div>
+</article>
+
+
+<!-- P08 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 08</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P08</div>
+<h4>Fotografía</h4>
+<p class="descripcion">Diseño con imagen.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$190</strong></div>
+</div>
+</article>
+
+
+<!-- P09 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 09</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P09</div>
+<h4>Diseño Floral</h4>
+<p class="descripcion">Diseño floral personalizado.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>Floral</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$175</strong></div>
+</div>
+</article>
+
+
+<!-- P10 -->
+
+<article class="producto producto-categoria personalizadas">
+<div class="producto-foto"><div class="foto-placeholder">FOTO PERSONALIZADA 10</div></div>
+<div class="producto-info">
+<div class="codigo">ES-P10</div>
+<h4>Diseño Exclusivo</h4>
+<p class="descripcion">Creación especial para tu evento.</p>
+<div class="datos">
+<div class="dato"><strong>Tamaño</strong>A elegir</div>
+<div class="dato"><strong>Capacidad</strong>A elegir</div>
+<div class="dato"><strong>Aroma</strong>A elegir</div>
+<div class="dato"><strong>Color</strong>A elegir</div>
+</div>
+<div class="precio"><span>Desde</span><strong>$200</strong></div>
+</div>
+</article>
+
+
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     FRASE
+========================================================= -->
+
+<section class="frase">
+
+<h2>
+
+Cada aroma guarda un momento.
+Cada detalle cuenta una historia.
+
+</h2>
+
+<p>
+
+Esencia · Velas y jabones artesanales
+
+</p>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACTO
+========================================================= -->
+
+<section
+class="contacto"
+id="contacto"
+>
+
+<div class="contacto-contenedor">
+
+
+<div class="titulo">
+
+<small>
+Esencia
+</small>
+
+<h2>
+¿Te gustó algún diseño?
+</h2>
+
+<p>
+Consulta disponibilidad, colores,
+aromas, tamaños y presentaciones.
+</p>
+
+</div>
+
+
+<div class="contacto-datos">
+
+
+<div class="contacto-item">
+
+<strong>
+WhatsApp
+</strong>
+
++52 000 000 0000
+
+</div>
+
+
+<div class="contacto-item">
+
+<strong>
+Instagram
+</strong>
+
+@esencia.velas
+
+</div>
+
+
+<div class="contacto-item">
+
+<strong>
+Correo
+</strong>
+
+contacto@esencia.com
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+<div class="logo">
+
+ESENCIA<span>•</span>
+
+</div>
+
+<p>
+Velas aromáticas · Jabones artesanales
+</p>
+
+<br>
+
+<p>
+© 2026 Esencia
+</p>
+
+</footer>
+
+
+<!-- =========================================================
+     VISOR
+========================================================= -->
+
+<div
+class="modal"
+id="modal"
+onclick="cerrarImagen()"
+>
+
+<span
+class="cerrar"
+>
+×
+</span>
+
+
+<img
+id="imagenGrande"
+src=""
+alt="Producto Esencia"
+>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   FILTROS
+========================================================= */
+
+function filtrar(categoria, boton){
+
+    const grupos =
+    document.querySelectorAll(".filtro-grupo");
+
+
+    const botones =
+    document.querySelectorAll(".filtro");
+
+
+    botones.forEach(function(b){
+
+        b.classList.remove("activo");
+
+    });
+
+
+    boton.classList.add("activo");
+
+
+    grupos.forEach(function(grupo){
+
+        if(categoria === "todos"){
+
+            grupo.style.display = "block";
+
+        }
+
+        else if(
+            grupo.classList.contains(categoria)
+        ){
+
+            grupo.style.display = "block";
+
+        }
+
+        else{
+
+            grupo.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* =========================================================
+   VISOR DE FOTOS
+========================================================= */
+
+function abrirImagen(elemento){
+
+    const imagen =
+    elemento.querySelector("img");
+
+
+    if(!imagen){
+
+        return;
+
+    }
+
+
+    document
+    .getElementById("imagenGrande")
+    .src = imagen.src;
+
+
+    document
+    .getElementById("modal")
+    .classList.add("abierto");
+
+}
+
+
+/* =========================================================
+   CERRAR VISOR
+========================================================= */
+
+function cerrarImagen(){
+
+    document
+    .getElementById("modal")
+    .classList.remove("abierto");
+
+}
+
+
+document.addEventListener(
+"keydown",
+function(event){
+
+    if(event.key === "Escape"){
+
+        cerrarImagen();
+
+    }
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
